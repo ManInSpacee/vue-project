@@ -1,0 +1,177 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --border-color: #ccc;
+  --btn-bg: #f0f0f0;
+  --btn-hover: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Темная тема */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #fff;
+  --border-color: #555;
+  --btn-bg: #444;
+  --btn-hover: #555;
+}
+
+[data-theme="dark"] body {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+[data-theme="dark"] .main-nav {
+  background: #2c2c2c;
+}
+
+[data-theme="dark"] .nav-link {
+  border-color: #555;
+}
+
+[data-theme="dark"] .nav-link:hover {
+  background: #444;
+}
+
+[data-theme="dark"] .panel,
+[data-theme="dark"] .form-box,
+[data-theme="dark"] .color-item,
+[data-theme="dark"] .practice-card,
+[data-theme="dark"] .profile-content {
+  background: #2c2c2c;
+  border-color: #555;
+  color: #fff;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+[data-theme="dark"] button {
+  background: #444;
+  border-color: #555;
+  color: #fff;
+}
+
+[data-theme="dark"] button:hover {
+  background: #555;
+}
+
+/* Контрастная тема */
+[data-theme="contrast"] {
+  --bg-color: #000;
+  --text-color: #fff;
+  --border-color: #fff;
+  --btn-bg: #000;
+  --btn-hover: #333;
+}
+
+[data-theme="contrast"] body {
+  background: #000;
+  color: #fff;
+}
+
+[data-theme="contrast"] .main-nav {
+  background: #000;
+  border-bottom: 2px solid #fff;
+}
+
+[data-theme="contrast"] .panel,
+[data-theme="contrast"] .form-box,
+[data-theme="contrast"] .color-item {
+  background: #000;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+[data-theme="contrast"] input,
+[data-theme="contrast"] select,
+[data-theme="contrast"] textarea {
+  background: #000;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+[data-theme="contrast"] button {
+  background: #000;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* Высокий контраст */
+[data-high-contrast="true"] {
+  --bg-color: #000;
+  --text-color: #fff;
+  --border-color: #fff;
+}
+
+[data-high-contrast="true"] body {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+[data-high-contrast="true"] .panel,
+[data-high-contrast="true"] .form-box,
+[data-high-contrast="true"] .color-item {
+  background: #000 !important;
+  border: 2px solid #fff !important;
+  color: #fff !important;
+}
+
+[data-high-contrast="true"] button {
+  border: 2px solid #fff !important;
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* Уменьшение анимации */
+[data-reduced-motion="true"] * {
+  animation: none !important;
+  transition: none !important;
+}
+
+button {
+  border: 1px solid var(--border-color);
+  padding: 8px 15px;
+  background: var(--btn-bg);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--btn-hover);
+}
+
+input, select, textarea {
+  border: 1px solid var(--border-color);
+  padding: 5px;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .main-nav {
+    flex-direction: column;
+  }
+}

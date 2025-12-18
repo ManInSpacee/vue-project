@@ -1,0 +1,39 @@
+
+=== ╤╥╨└═╚╓└ 44 ===
+README_27.md 2025-12-03
+44 / 48    "build": "vite build" , 
+    "preview" : "vite preview" , 
+    "predeploy" : "npm run build" , 
+    "deploy" : "gh-pages -d dist"  
+  } 
+} 
+╧ю ёэхэшх:
+"predeploy"  - ртЄюьрЄшўхёъш т√яюыэ хЄё  яхЁхф deploy , ёюсшЁрхЄ яЁюхъЄ
+"deploy"  - яєсышъєхЄ ёюфхЁцшьюх яряъш dist  т тхЄъє gh-pages
+╪ру 4: ╚эшЎшрышчрЎш  git ш яхЁт√щ ъ юььшЄ
+┼ёыш т√ х∙х эх шэшЎшрышчшЁютрыш git ЁхяючшЄюЁшщ:
+git init  
+git add .  
+git commit -m "Initial commit"
+╪ру 5: ╧ю фъы■ўхэшх ъ GitHub
+╤ючфрщЄх ЁхяючшЄюЁшщ эр GitHub ш яюфъы■ўшЄх хую:
+git remote add origin https://github.com/<USERNAME>/<REPO>.git  
+git branch -M main  
+git push -u origin main  
+╪ру 6: ─хяыющ ю фэющ ъ юьрэфющ!
+╥хяхЁ№ фы  фхяыю  фюёЄрЄюўэю т√яюыэшЄ№:
+npm run deploy  
+▌Єр ъюьрэфр ртЄюьрЄшўхёъш:
+1. ╤юсхЁхЄ яЁюхъЄ ( npm run build )
+2. ╤ючфрёЄ тхЄъє gh-pages  (хёыш х╕ эхЄ)
+3. ╬яєсышъєхЄ ёюфхЁцшьюх dist  т ¤Єє тхЄъє
+4. ╬ЄяЁртшЄ шчьхэхэш  эр GitHub
+╪ру 7: ═рёЄЁющър GitHub P ages
+1. ╬ЄъЁющЄх ЁхяючшЄюЁшщ эр GitHub
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\ManInSpace\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 80: character maps to <undefined>
